@@ -1,11 +1,17 @@
-const sum = (a,b) => a+b;
-const diff = (a,b) => a - b;
-const multi = (a,b) => a * b;
-const div = (a,b) => a/b;
+class operations {
+    constructor(a,b){
+        this.a = a;
+        this.b = b;
+    }
+
+    sum = () => this.a+this.b;
+    diff = () =>this.a-this.b;
+    multi = () =>this.a*this.b;
+    div = () => this.a/this.b;
+}
+
+
 
 export {
-    sum,
-    diff,
-    multi,
-    div
+    operations
 }
